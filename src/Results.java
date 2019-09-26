@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * @author PAgrawal
  */
@@ -103,7 +97,7 @@ public class Results extends javax.swing.JFrame {
 
         jLabelCS.setText("Computer Score: ");
 
-        jLabelPS.setText("Player Score:");
+        jLabelPS.setText("Player Score: ");
 
         jLabelTotalMoney.setText("Total Money:");
 

@@ -21,6 +21,7 @@ public class StartGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelSubmit;
 
     public StartGUI() {
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         initComponents();
     }
 
@@ -31,6 +32,7 @@ public class StartGUI extends javax.swing.JFrame {
     public StartGUI(BJCard player, BJCard dealer) {
         this.player = player;
         this.dealer = dealer;
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         initComponents();
         this.player.shuffle();
         this.dealer.shuffle();

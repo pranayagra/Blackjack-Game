@@ -1,4 +1,3 @@
-
 /**
  * @author PAgrawal
  */
@@ -203,31 +202,31 @@ public class Game extends javax.swing.JFrame {
         jLabelCard5.setPreferredSize(new java.awt.Dimension(85, 106));
 
         jLabelCardComp1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelCardComp1.setText("C1");
+        jLabelCardComp1.setText("");
         jLabelCardComp1.setMaximumSize(new java.awt.Dimension(90, 108));
         jLabelCardComp1.setMinimumSize(new java.awt.Dimension(85, 106));
         jLabelCardComp1.setPreferredSize(new java.awt.Dimension(85, 106));
 
         jLabelCardComp2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelCardComp2.setText("C2");
+        jLabelCardComp2.setText("");
         jLabelCardComp2.setMaximumSize(new java.awt.Dimension(90, 108));
         jLabelCardComp2.setMinimumSize(new java.awt.Dimension(85, 106));
         jLabelCardComp2.setPreferredSize(new java.awt.Dimension(85, 106));
 
         jLabelCardComp3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelCardComp3.setText("C3");
+        jLabelCardComp3.setText("");
         jLabelCardComp3.setMaximumSize(new java.awt.Dimension(90, 107));
         jLabelCardComp3.setMinimumSize(new java.awt.Dimension(85, 106));
         jLabelCardComp3.setPreferredSize(new java.awt.Dimension(85, 106));
 
         jLabelCardComp4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelCardComp4.setText("C4");
+        jLabelCardComp4.setText("");
         jLabelCardComp4.setMaximumSize(new java.awt.Dimension(90, 107));
         jLabelCardComp4.setMinimumSize(new java.awt.Dimension(85, 106));
         jLabelCardComp4.setPreferredSize(new java.awt.Dimension(85, 106));
 
         jLabelCardComp5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelCardComp5.setText("C5");
+        jLabelCardComp5.setText("");
         jLabelCardComp5.setMaximumSize(new java.awt.Dimension(90, 107));
         jLabelCardComp5.setMinimumSize(new java.awt.Dimension(85, 106));
         jLabelCardComp5.setPreferredSize(new java.awt.Dimension(85, 106));
@@ -470,10 +469,10 @@ public class Game extends javax.swing.JFrame {
     private void jLabelDrawMouseReleased(java.awt.event.MouseEvent evt) {
         counter++;
         jLabelWarning.setText("If an Ace (1 or 11) is drawn, choose the value, or 1 for all Aces will be assumed when Stand is pressed");
-        System.out.println(player.getCard1() + ", " + player.getCard2() + ", " + player.getCard3() + ", " + player.getCard4() + ", " + player.getCard5());
+        //System.out.println(player.getCard1() + ", " + player.getCard2() + ", " + player.getCard3() + ", " + player.getCard4() + ", " + player.getCard5());
         if (counter >= 1) {
-            String c1 = "/AppPackage/Card" + player.getCard1() + ".png";
-            String cc1 = "/AppPackage/Card" + dealer.getCard1() + ".png";
+            String c1 = "/pics/Card" + player.getCard1() + ".png";
+            String cc1 = "/pics/Card" + dealer.getCard1() + ".png";
             jLabelCard1.setIcon(new javax.swing.ImageIcon(getClass().getResource(c1)));
             jLabelCardComp1.setIcon(new javax.swing.ImageIcon(getClass().getResource(cc1)));
             if (player.getCard1() == 1) {
@@ -482,18 +481,17 @@ public class Game extends javax.swing.JFrame {
             }
         }
         if (counter >= 2) {
-            String c2 = "/AppPackage/Card" + player.getCard2() + ".png";
-            //String cc2 = "/AppPackage/Card" + Comput.getCard2() + ".png";
+            String c2 = "/pics/Card" + player.getCard2() + ".png";
             jLabelCard2.setIcon(new javax.swing.ImageIcon(getClass().getResource(c2)));
-            jLabelCardComp2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AppPackage/Cardback.jpg")));
+            jLabelCardComp2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Cardback.jpg")));
             if (player.getCard2() == 1) {
                 jLabelCard2Ace1.setText("1");
                 jLabelCard2Ace11.setText("11");
             }
         }
         if (counter >= 3) {
-            String c3 = "/AppPackage/Card" + player.getCard3() + ".png";
-            String cc3 = "/AppPackage/Card" + dealer.getCard3() + ".png";
+            String c3 = "/pics/Card" + player.getCard3() + ".png";
+            String cc3 = "/pics/Card" + dealer.getCard3() + ".png";
             jLabelCard3.setIcon(new javax.swing.ImageIcon(getClass().getResource(c3)));
             int amount = (dealer.computerSum(dealer, 3));
             if (amount >= 3) {
@@ -505,8 +503,8 @@ public class Game extends javax.swing.JFrame {
             }
         }
         if (counter >= 4) {
-            String c4 = "/AppPackage/Card" + player.getCard4() + ".png";
-            String cc4 = "/AppPackage/Card" + dealer.getCard4() + ".png";
+            String c4 = "/pics/Card" + player.getCard4() + ".png";
+            String cc4 = "/pics/Card" + dealer.getCard4() + ".png";
             jLabelCard4.setIcon(new javax.swing.ImageIcon(getClass().getResource(c4)));
             int amount = (dealer.computerSum(dealer, 4));
             if (amount >= 4) {
@@ -518,8 +516,8 @@ public class Game extends javax.swing.JFrame {
             }
         }
         if (counter >= 5) {
-            String c5 = "/AppPackage/Card" + player.getCard5() + ".png";
-            String cc5 = "/AppPackage/Card" + dealer.getCard5() + ".png";
+            String c5 = "/pics/Card" + player.getCard5() + ".png";
+            String cc5 = "/pics/Card" + dealer.getCard5() + ".png";
             jLabelCard5.setIcon(new javax.swing.ImageIcon(getClass().getResource(c5)));
             int amount = (dealer.computerSum(dealer, 5));
             if (amount >= 5) {
